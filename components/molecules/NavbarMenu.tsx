@@ -1,11 +1,26 @@
 import { NavbarDropdown, NavbarLink } from '../atoms';
 
+const dataNavMenu = [
+  {
+    title: 'Home',
+    href: '/',
+  },
+  {
+    title: 'More',
+    href: '/more',
+  },
+  {
+    title: 'Contact',
+    href: '/contect',
+  },
+];
+
 export function NavbarMenu() {
   return (
-    <ul className="flex item-center gap-5">
-      {['home', 'more', 'contact'].map((item, idx) => (
+    <ul className="nav-layout-menu">
+      {dataNavMenu.map((item, idx) => (
         <li key={idx}>
-          <NavbarLink href={`/${item}`} title={item} />
+          <NavbarLink href={item.href} title={item.title} />
         </li>
       ))}
       <NavbarDropdown />
