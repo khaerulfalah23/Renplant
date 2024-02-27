@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-layout-menu {
+  @apply flex items-center gap-5
+}
+
+.nav-feature {
+  @apply hover:bg-neutral-100 p-2 rounded-full cursor-pointer
+}
