@@ -1,9 +1,10 @@
-import { NavbarLogo } from '../molecules/NavbarLogo';
+import { NavbarLogo, NavbarMenu } from '../molecules';
 
 export function Navbar() {
   return (
-    <nav>
+    <nav className="flex items-center justify-between">
       <NavbarLogo />
+      <NavbarMenu />
     </nav>
   );
 }
