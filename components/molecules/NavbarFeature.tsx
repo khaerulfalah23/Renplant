@@ -1,5 +1,5 @@
-import { NavbarCart, NavbarSearch } from '../atoms';
-import { NavbarToggle } from '../atoms/NavbarToggle';
+import { NavbarCart, NavbarSearch, NavbarToggle } from '../atoms';
+import { Button } from '../ui/button';
 
 export function NavbarFeature() {
   return (
@@ -7,6 +7,7 @@ export function NavbarFeature() {
       <NavbarSearch />
       <NavbarCart />
       <NavbarToggle />
+      <Button className="hidden lg:block">Login</Button>
     </div>
   );
 }
