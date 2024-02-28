@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export function Background() {
   return (
-    <div className="absolute -z-50 w-full bg-blue-300">
+    <div className="absolute -z-50 w-full">
       <Image
         className="object-cover w-full"
         priority
