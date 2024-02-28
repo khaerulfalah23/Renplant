@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-primary-500 text-white;
+}
+
 .nav-hover {
   @apply hover:bg-primary-400 hover:text-primary-800 transition-colors duration-300;
 }
