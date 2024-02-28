@@ -7,7 +7,10 @@ type NavbarLinkProps = {
 
 export function NavbarLink({ href, title }: NavbarLinkProps) {
   return (
-    <Link className="capitalize text-2xl font-medium" href={href}>
+    <Link
+      className="nav-hover capitalize text-2xl font-medium px-3 py-2 rounded-md"
+      href={href}
+    >
       {title}
     </Link>
   );
