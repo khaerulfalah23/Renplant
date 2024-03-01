@@ -7,7 +7,7 @@ export function NavbarFeature() {
       <NavbarSearch />
       <NavbarCart />
       <NavbarToggle />
-      <Button className="hidden lg:block bg-primary-400 hover:bg-primary-800 transition-colors duration-300">
+      <Button className="hidden lg:block" variant={'outline'}>
         Login
       </Button>
     </div>
